@@ -116,8 +116,8 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color:  #585858;
+		font-family: "Open Sans", sans-serif; /*"Source Sans Pro", Helvetica, sans-serif; */
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -139,7 +139,20 @@ input, select, textarea {
 
 		}
 
-	a {
+		a {
+			-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+			border-bottom: dotted 1px;
+			color: #fa8131ee;
+			text-decoration: none; }
+			a:hover {
+			  border-bottom-color: #fa8131ee;;
+			  color: #fa8131ee !important; }
+			  a:hover strong {
+				color: inherit; }
+	/* a {
 		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -152,7 +165,7 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 			color: #f2849e !important;
-		}
+		} */
 
 	strong, b {
 		font-weight: 900;
@@ -172,10 +185,11 @@ input, select, textarea {
 		line-height: 1.3;
 		margin: 0 0 1em 0;
 		letter-spacing: -0.035em;
+		color:  #fa8131ee;
 	}
 
 		h1 a {
-			color: inherit;
+			color:  #fa8131ee; /*inherit;*/
 		}
 
 		@media screen and (max-width: 736px) {
